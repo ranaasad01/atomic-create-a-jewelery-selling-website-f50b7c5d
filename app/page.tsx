@@ -257,11 +257,7 @@ export default function HomePage() {
               className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.05] text-balance mb-6"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Jewelry That
-              <br />
-              <span className="text-[#c9a96e]">Outlasts</span>
-              <br />
-              Every Moment
+              Jewelry ThatOutlastsEvery
             </motion.h1>
 
             <motion.p
