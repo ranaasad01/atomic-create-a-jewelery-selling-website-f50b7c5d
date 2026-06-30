@@ -770,7 +770,7 @@ export default function HomePage() {
                     : "bg-[#161616] border-white/5 hover:border-[#c9a96e]/20"
                 }`}
               >
-                <div className="mb-5">
+                <div className="mb-5" style={{ color: "#f59e0b", backgroundColor: "#84cc16" }}>
                   <StarRating rating={t.rating} />“The Soleil ring arrived in the most exquisite packaging. Every detail, from the setting to the engraving, was flawless</div>
                 <p className="text-[#f5f0eb]/70 text-sm leading-relaxed mb-6 italic">
                   &ldquo;{t.text}&rdquo;
