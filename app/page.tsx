@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 import { ArrowRight, Star, Shield, Truck, RefreshCw, ChevronDown, Mail, Phone, MapPin, Check } from 'lucide-react';
@@ -771,8 +771,7 @@ export default function HomePage() {
                 }`}
               >
                 <div className="mb-5">
-                  <StarRating rating={t.rating} />
-                </div>
+                  <StarRating rating={t.rating} />“The Soleil ring arrived in the most exquisite packaging. Every detail, from the setting to the engraving, was flawless</div>
                 <p className="text-[#f5f0eb]/70 text-sm leading-relaxed mb-6 italic">
                   &ldquo;{t.text}&rdquo;
                 </p>
