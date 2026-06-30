@@ -737,7 +737,7 @@ export default function HomePage() {
             <motion.h2
               variants={fadeInUp}
               className="text-4xl md:text-5xl font-semibold tracking-tight text-balance"
-              style={{ fontFamily: "var(--font-playfair)" }}
+              style={{ fontFamily: "var(--font-playfair)", color: "#f97316", backgroundColor: "#d946ef", fontSize: "28px", padding: "16px", margin: "8px", borderRadius: "24px" }}
             >
               Worn with Love,
               <br />
