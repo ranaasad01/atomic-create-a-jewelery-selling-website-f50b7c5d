@@ -264,9 +264,7 @@ export default function HomePage() {
               variants={fadeInUp}
               className="text-[#f5f0eb]/65 text-lg leading-relaxed max-w-md mx-auto lg:mx-0 mb-10"
             >
-              Handcrafted from ethically sourced gold, platinum, and precious
-              stones. Each Aurum piece is a testament to the art of fine
-              jewelry, made to be worn for generations.
+              Handcrafted from ethically sourced gold, platinum, and precious stones. Each Aurum piece is a testament to the art of fine jewelry.
             </motion.p>
 
             <motion.div
