@@ -64,7 +64,7 @@ const collections = [
     id: "c1",
     name: "Eternal Rings",
     count: "24 pieces",
-    image: "https://shapirodiamonds.com/cdn/shop/files/round-diamond-solitaire-mixed-shape-eternity-band-1266786_1080x.jpg?v=1755151791",
+    image: "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/f50b7c5d-771c-48ba-9787-a2e9a350400c/images/uploaded-1782821103314-r71jau.png?v=1782821104667",
     href: "#collections",
   },
   {
