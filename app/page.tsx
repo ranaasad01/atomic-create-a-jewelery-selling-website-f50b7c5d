@@ -354,7 +354,7 @@ export default function HomePage() {
             <motion.h2
               variants={fadeInUp}
               className="text-4xl md:text-5xl font-semibold tracking-tight text-balance"
-              style={{ fontFamily: "var(--font-playfair)" }}
+              style={{ fontFamily: "var(--font-playfair)", color: "#ef4444" }}
             >
               Discover Your Signature
             </motion.h2>
