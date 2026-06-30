@@ -356,7 +356,7 @@ export default function HomePage() {
               className="text-4xl md:text-5xl font-semibold tracking-tight text-balance"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Discover Your Signature Piece
+              Discover Your Signature
             </motion.h2>
             <motion.p
               variants={fadeInUp}
