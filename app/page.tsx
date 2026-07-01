@@ -861,7 +861,9 @@ export default function HomePage() {
                   className="text-[#f5f0eb]/70 text-sm leading-relaxed mb-6 italic"
                   data-atomic-id="a1vz3ezo"
                   data-atomic-instance={i}
-                  style={i === 0 ? {
+                  style={i === 1 ? {
+                    fontSize: "24px"
+                  } : i === 0 ? {
                     color: "#f59e0b"
                   } : undefined}>
                   &ldquo;{t.text}&rdquo;
