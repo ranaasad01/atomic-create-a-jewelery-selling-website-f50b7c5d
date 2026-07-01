@@ -539,7 +539,7 @@ export default function HomePage() {
                 <div
                   className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/40 to-transparent"
                   data-atomic-id="a1kpe3bg"
-                  src="https://titoaistorageaccount.blob.core.windows.net/titoai-storage/f50b7c5d-771c-48ba-9787-a2e9a350400c/images/uploaded-1782911576480-d7ynei.png?v=1782911577661" />
+                  src="https://titoaistorageaccount.blob.core.windows.net/titoai-storage/f50b7c5d-771c-48ba-9787-a2e9a350400c/images/uploaded-1782911623270-yzyk5.png?v=1782911624490" />
               </div>
               {/* Floating accent card */}
               <motion.div
