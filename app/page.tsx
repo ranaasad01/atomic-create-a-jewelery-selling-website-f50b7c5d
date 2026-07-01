@@ -168,17 +168,19 @@ const processSteps = [
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-flex items-center gap-2 text-xs tracking-[0.3em] uppercase text-[#c9a96e] font-medium mb-4">
-      <span className="w-6 h-px bg-[#c9a96e]" />
+    <span
+      className="inline-flex items-center gap-2 text-xs tracking-[0.3em] uppercase text-[#c9a96e] font-medium mb-4"
+      data-atomic-id="akldnhz">
+      <span className="w-6 h-px bg-[#c9a96e]" data-atomic-id="a11w18ey" />
       {children}
-      <span className="w-6 h-px bg-[#c9a96e]" />
+      <span className="w-6 h-px bg-[#c9a96e]" data-atomic-id="a14h8gny" />
     </span>
   );
 }
 
 function StarRating({ rating }: { rating: number }) {
   return (
-    <div className="flex items-center gap-0.5">
+    <div className="flex items-center gap-0.5" data-atomic-id="adpa2w9">
       {Array.from({ length: 5 }).map((_, i) => (
         <Star
           key={i}
@@ -217,18 +219,26 @@ export default function HomePage() {
   }
 
   return (
-    <main className="bg-[#0f0f0f] text-[#f5f0eb] overflow-x-hidden">
+    <main
+      className="bg-[#0f0f0f] text-[#f5f0eb] overflow-x-hidden"
+      data-atomic-id="as7rklj">
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section
+        className="relative min-h-screen flex items-center justify-center overflow-hidden"
+        data-atomic-id="a3gb5ks">
         {/* Background image */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0" data-atomic-id="ag3zaen">
           <img
             src="https://img.magnific.com/free-photo/fine-jewelry-promotion-ears-woman_114579-11505.jpg?semt=ais_hybrid&w=740&q=80"
             alt="Luxury jewelry on dark background"
             className="w-full h-full object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0f0f0f]/70 via-[#0f0f0f]/50 to-[#0f0f0f]" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0f0f0f]/60 via-transparent to-[#0f0f0f]/30" />
+            data-atomic-id="a1vff37w" />
+          <div
+            className="absolute inset-0 bg-gradient-to-b from-[#0f0f0f]/70 via-[#0f0f0f]/50 to-[#0f0f0f]"
+            data-atomic-id="a1vgtt1w" />
+          <div
+            className="absolute inset-0 bg-gradient-to-r from-[#0f0f0f]/60 via-transparent to-[#0f0f0f]/30"
+            data-atomic-id="a1vi8n6e" />
         </div>
 
         {/* Radial glow */}
@@ -238,9 +248,11 @@ export default function HomePage() {
             background:
               "radial-gradient(ellipse 60% 50% at 50% 60%, rgba(201,169,110,0.08) 0%, transparent 70%)",
           }}
-        />
+          data-atomic-id="ag6synn" />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-32 pb-24 flex flex-col lg:flex-row items-center gap-16">
+        <div
+          className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-32 pb-24 flex flex-col lg:flex-row items-center gap-16"
+          data-atomic-id="ag87ss5">
           {/* Left: copy */}
           <motion.div
             variants={staggerContainer}
@@ -274,7 +286,7 @@ export default function HomePage() {
               <a
                 href="#collections"
                 className="group inline-flex items-center gap-2 px-8 py-3.5 bg-[#c9a96e] text-[#0f0f0f] text-sm tracking-widest uppercase font-medium rounded-sm hover:bg-[#e0c08a] transition-all duration-300 shadow-[0_0_30px_rgba(201,169,110,0.25)]"
-              >
+                data-atomic-id="av0rw3o">
                 Explore Collections
                 <ArrowRight
                   size={15}
@@ -284,7 +296,7 @@ export default function HomePage() {
               <a
                 href="#about"
                 className="inline-flex items-center gap-2 px-8 py-3.5 border border-[#c9a96e]/40 text-[#f5f0eb]/80 text-sm tracking-widest uppercase font-medium rounded-sm hover:border-[#c9a96e] hover:text-[#c9a96e] transition-all duration-300"
-              >
+                data-atomic-id="av0rxs6">
                 Our Story
               </a>
             </motion.div>
@@ -301,23 +313,25 @@ export default function HomePage() {
               { value: "35+", label: "Years of Craft" },
               { value: "12k+", label: "Pieces Created" },
               { value: "98%", label: "Client Satisfaction" },
-            ].map((stat) => (
-              <motion.div
-                key={stat.label}
-                variants={scaleIn}
-                className="bg-white/5 backdrop-blur-md border border-[#c9a96e]/20 rounded-xl px-8 py-5 text-center shadow-[0_8px_32px_rgba(0,0,0,0.3)]"
-              >
-                <p
-                  className="text-3xl font-semibold text-[#c9a96e] mb-1"
-                  style={{ fontFamily: "var(--font-playfair)" }}
-                >
-                  {stat.value}
-                </p>
-                <p className="text-xs tracking-widest uppercase text-[#f5f0eb]/50">
-                  {stat.label}
-                </p>
-              </motion.div>
-            ))}
+            ].map((stat, __atomicIdx) => (<motion.div
+              key={stat.label}
+              variants={scaleIn}
+              className="bg-white/5 backdrop-blur-md border border-[#c9a96e]/20 rounded-xl px-8 py-5 text-center shadow-[0_8px_32px_rgba(0,0,0,0.3)]"
+            >
+              <p
+                className="text-3xl font-semibold text-[#c9a96e] mb-1"
+                style={{ fontFamily: "var(--font-playfair)" }}
+                data-atomic-id="a1u4qhi4"
+                data-atomic-instance={__atomicIdx}>
+                {stat.value}
+              </p>
+              <p
+                className="text-xs tracking-widest uppercase text-[#f5f0eb]/50"
+                data-atomic-id="a1u4qj6m"
+                data-atomic-instance={__atomicIdx}>
+                {stat.label}
+              </p>
+            </motion.div>))}
           </motion.div>
         </div>
 
@@ -328,7 +342,9 @@ export default function HomePage() {
           transition={{ delay: 1.4, duration: 0.6 }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-[#f5f0eb]/30"
         >
-          <span className="text-[10px] tracking-[0.3em] uppercase">Scroll</span>
+          <span
+            className="text-[10px] tracking-[0.3em] uppercase"
+            data-atomic-id="a113gmoi">Scroll</span>
           <motion.div
             animate={{ y: [0, 6, 0] }}
             transition={{ repeat: Infinity, duration: 1.6, ease: "easeInOut" }}
@@ -337,10 +353,12 @@ export default function HomePage() {
           </motion.div>
         </motion.div>
       </section>
-
       {/* ── COLLECTIONS GRID ─────────────────────────────────────────────── */}
-      <section id="collections" className="py-28 md:py-36 bg-[#0f0f0f]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section
+        id="collections"
+        className="py-28 md:py-36 bg-[#0f0f0f]"
+        data-atomic-id="a1ppdw5c">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8" data-atomic-id="atmbkz5">
           <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -375,34 +393,43 @@ export default function HomePage() {
             viewport={{ once: true, margin: "-60px" }}
             className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-16"
           >
-            {collections.map((col) => (
-              <motion.a
-                key={col.id}
-                href={col.href}
-                variants={scaleIn}
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3 }}
-                className="group relative overflow-hidden rounded-2xl aspect-[4/5] cursor-pointer"
-              >
-                <img
-                  src={col.image}
-                  alt={col.name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0f0f0f]/80 via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <p className="text-xs tracking-[0.25em] uppercase text-[#c9a96e] mb-1">
-                    {col.count}
-                  </p>
-                  <h3
-                    className="text-xl font-semibold text-[#f5f0eb]"
-                    style={{ fontFamily: "var(--font-playfair)" }}
-                  >
-                    {col.name}
-                  </h3>
-                </div>
-              </motion.a>
-            ))}
+            {collections.map((col, __atomicIdx) => (<motion.a
+              key={col.id}
+              href={col.href}
+              variants={scaleIn}
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+              className="group relative overflow-hidden rounded-2xl aspect-[4/5] cursor-pointer"
+            >
+              <img
+                src={col.image}
+                alt={col.name}
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                data-atomic-id="ab9ablv"
+                data-atomic-instance={__atomicIdx} />
+              <div
+                className="absolute inset-0 bg-gradient-to-t from-[#0f0f0f]/80 via-transparent to-transparent"
+                data-atomic-id="abap1fv"
+                data-atomic-instance={__atomicIdx} />
+              <div
+                className="absolute bottom-0 left-0 right-0 p-6"
+                data-atomic-id="abc3vkd"
+                data-atomic-instance={__atomicIdx}>
+                <p
+                  className="text-xs tracking-[0.25em] uppercase text-[#c9a96e] mb-1"
+                  data-atomic-id="a1eq7csd"
+                  data-atomic-instance={__atomicIdx}>
+                  {col.count}
+                </p>
+                <h3
+                  className="text-xl font-semibold text-[#f5f0eb]"
+                  style={{ fontFamily: "var(--font-playfair)" }}
+                  data-atomic-id="a14b6zuy"
+                  data-atomic-instance={__atomicIdx}>
+                  {col.name}
+                </h3>
+              </div>
+            </motion.a>))}
           </motion.div>
 
           {/* Featured products */}
@@ -413,58 +440,86 @@ export default function HomePage() {
             viewport={{ once: true, margin: "-60px" }}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
           >
-            {featuredProducts.map((product) => (
-              <motion.div
-                key={product.id}
-                variants={fadeInUp}
-                whileHover={{ y: -6 }}
-                transition={{ duration: 0.3 }}
-                className="group bg-[#161616] border border-white/5 rounded-2xl overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_-8px_rgba(0,0,0,0.3)] hover:border-[#c9a96e]/30 hover:shadow-[0_8px_40px_rgba(201,169,110,0.1)] transition-all duration-400"
-              >
-                <div className="relative overflow-hidden aspect-square">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-108"
-                  />
-                  {product.badge && (
-                    <span className="absolute top-3 left-3 px-2.5 py-1 bg-[#c9a96e] text-[#0f0f0f] text-[10px] tracking-widest uppercase font-semibold rounded-full">
-                      {product.badge}
-                    </span>
-                  )}
+            {featuredProducts.map((product, __atomicIdx) => (<motion.div
+              key={product.id}
+              variants={fadeInUp}
+              whileHover={{ y: -6 }}
+              transition={{ duration: 0.3 }}
+              className="group bg-[#161616] border border-white/5 rounded-2xl overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_-8px_rgba(0,0,0,0.3)] hover:border-[#c9a96e]/30 hover:shadow-[0_8px_40px_rgba(201,169,110,0.1)] transition-all duration-400"
+            >
+              <div
+                className="relative overflow-hidden aspect-square"
+                data-atomic-id="adpzrm5"
+                data-atomic-instance={__atomicIdx}>
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-108"
+                  data-atomic-id="a12ls9d6"
+                  data-atomic-instance={__atomicIdx} />
+                {product.badge && (
+                  <span
+                    className="absolute top-3 left-3 px-2.5 py-1 bg-[#c9a96e] text-[#0f0f0f] text-[10px] tracking-widest uppercase font-semibold rounded-full"
+                    data-atomic-id="a1a3m1rh"
+                    data-atomic-instance={__atomicIdx}>
+                    {product.badge}
+                  </span>
+                )}
+              </div>
+              <div
+                className="p-5"
+                data-atomic-id="adrelqn"
+                data-atomic-instance={__atomicIdx}>
+                <p
+                  className="text-[10px] tracking-[0.25em] uppercase text-[#c9a96e]/80 mb-1"
+                  data-atomic-id="a19b3nwf"
+                  data-atomic-instance={__atomicIdx}>
+                  {product.material} · {product.category}
+                </p>
+                <h3
+                  className="text-base font-semibold text-[#f5f0eb] mb-1 leading-snug"
+                  style={{ fontFamily: "var(--font-playfair)" }}
+                  data-atomic-id="a3j1aj0"
+                  data-atomic-instance={__atomicIdx}>
+                  {product.name}
+                </h3>
+                <p
+                  className="text-xs text-[#f5f0eb]/45 leading-relaxed mb-4"
+                  data-atomic-id="a19b3r9f"
+                  data-atomic-instance={__atomicIdx}>
+                  {product.description}
+                </p>
+                <div
+                  className="flex items-center justify-between"
+                  data-atomic-id="a19hw7so"
+                  data-atomic-instance={__atomicIdx}>
+                  <span
+                    className="text-[#c9a96e] font-semibold text-sm"
+                    data-atomic-id="agyvtqi"
+                    data-atomic-instance={__atomicIdx}>
+                    ${(product.price ?? 0).toLocaleString()}
+                  </span>
+                  <button
+                    className="text-[10px] tracking-widest uppercase text-[#f5f0eb]/50 hover:text-[#c9a96e] transition-colors duration-300 border border-white/10 hover:border-[#c9a96e]/40 px-3 py-1.5 rounded-sm"
+                    data-atomic-id="a1odzpp2"
+                    data-atomic-instance={__atomicIdx}>
+                    View
+                  </button>
                 </div>
-                <div className="p-5">
-                  <p className="text-[10px] tracking-[0.25em] uppercase text-[#c9a96e]/80 mb-1">
-                    {product.material} · {product.category}
-                  </p>
-                  <h3
-                    className="text-base font-semibold text-[#f5f0eb] mb-1 leading-snug"
-                    style={{ fontFamily: "var(--font-playfair)" }}
-                  >
-                    {product.name}
-                  </h3>
-                  <p className="text-xs text-[#f5f0eb]/45 leading-relaxed mb-4">
-                    {product.description}
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-[#c9a96e] font-semibold text-sm">
-                      ${(product.price ?? 0).toLocaleString()}
-                    </span>
-                    <button className="text-[10px] tracking-widest uppercase text-[#f5f0eb]/50 hover:text-[#c9a96e] transition-colors duration-300 border border-white/10 hover:border-[#c9a96e]/40 px-3 py-1.5 rounded-sm">
-                      View
-                    </button>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
+              </div>
+            </motion.div>))}
           </motion.div>
         </div>
       </section>
-
       {/* ── ABOUT / STORY ────────────────────────────────────────────────── */}
-      <section id="about" className="py-28 md:py-36 bg-[#0a0a0a]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section
+        id="about"
+        className="py-28 md:py-36 bg-[#0a0a0a]"
+        data-atomic-id="anv3wx7">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8" data-atomic-id="ayg598c">
+          <div
+            className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+            data-atomic-id="aezus3j">
             {/* Image side */}
             <motion.div
               variants={slideInLeft}
@@ -473,13 +528,17 @@ export default function HomePage() {
               viewport={{ once: true, margin: "-80px" }}
               className="relative"
             >
-              <div className="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-[0_24px_80px_rgba(0,0,0,0.5)]">
+              <div
+                className="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-[0_24px_80px_rgba(0,0,0,0.5)]"
+                data-atomic-id="a1efsacn">
                 <img
                   src="https://pearls-and-colors.com/_next/image?url=%2Fimages%2Fatelier%2Fjewelry-craftsman-artisan-workshop-hands.jpg&w=3840&q=75"
                   alt="Master jeweler at work in the Aurum atelier"
                   className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/40 to-transparent" />
+                  data-atomic-id="a1knzdhg" />
+                <div
+                  className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/40 to-transparent"
+                  data-atomic-id="a1kpe3bg" />
               </div>
               {/* Floating accent card */}
               <motion.div
@@ -492,12 +551,14 @@ export default function HomePage() {
                 <p
                   className="text-4xl font-bold leading-none mb-1"
                   style={{ fontFamily: "var(--font-playfair)" }}
-                >
+                  data-atomic-id="a64p3iz">
                   35
                 </p>
-                <p className="text-xs tracking-widest uppercase font-medium opacity-80">
+                <p
+                  className="text-xs tracking-widest uppercase font-medium opacity-80"
+                  data-atomic-id="a64p57h">
                   Years of
-                  <br />
+                  <br data-atomic-id="akrag1w" />
                   Mastery
                 </p>
               </motion.div>
@@ -519,7 +580,7 @@ export default function HomePage() {
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
                 Born in a Parisian
-                <br />
+                <br data-atomic-id="aly6g4h" />
                 Atelier, Worn Worldwide
               </motion.h2>
               <motion.p
@@ -551,18 +612,22 @@ export default function HomePage() {
                   "Fairmined gold certified",
                   "Handcrafted in Paris",
                   "Lifetime guarantee",
-                ].map((point) => (
-                  <motion.div
-                    key={point}
-                    variants={fadeInUp}
-                    className="flex items-center gap-2.5"
-                  >
-                    <span className="w-5 h-5 rounded-full bg-[#c9a96e]/15 border border-[#c9a96e]/40 flex items-center justify-center flex-shrink-0">
-                      <Check size={10} className="text-[#c9a96e]" />
-                    </span>
-                    <span className="text-sm text-[#f5f0eb]/70">{point}</span>
-                  </motion.div>
-                ))}
+                ].map((point, __atomicIdx) => (<motion.div
+                  key={point}
+                  variants={fadeInUp}
+                  className="flex items-center gap-2.5"
+                >
+                  <span
+                    className="w-5 h-5 rounded-full bg-[#c9a96e]/15 border border-[#c9a96e]/40 flex items-center justify-center flex-shrink-0"
+                    data-atomic-id="aj9aa1f"
+                    data-atomic-instance={__atomicIdx}>
+                    <Check size={10} className="text-[#c9a96e]" />
+                  </span>
+                  <span
+                    className="text-sm text-[#f5f0eb]/70"
+                    data-atomic-id="akjvw5x"
+                    data-atomic-instance={__atomicIdx}>{point}</span>
+                </motion.div>))}
               </motion.div>
 
               <motion.a
@@ -577,10 +642,11 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* ── VALUE PROPS ──────────────────────────────────────────────────── */}
-      <section className="py-24 md:py-32 bg-[#0f0f0f] border-y border-white/5">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section
+        className="py-24 md:py-32 bg-[#0f0f0f] border-y border-white/5"
+        data-atomic-id="ab32lin">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8" data-atomic-id="a1bzwdxc">
           <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -621,16 +687,23 @@ export default function HomePage() {
                       : "bg-[#161616] border-white/5 hover:border-[#c9a96e]/20"
                   }`}
                 >
-                  <div className="w-11 h-11 rounded-xl bg-[#c9a96e]/10 border border-[#c9a96e]/25 flex items-center justify-center mb-5">
+                  <div
+                    className="w-11 h-11 rounded-xl bg-[#c9a96e]/10 border border-[#c9a96e]/25 flex items-center justify-center mb-5"
+                    data-atomic-id="al1wqeo"
+                    data-atomic-instance={i}>
                     <Icon size={20} className="text-[#c9a96e]" strokeWidth={1.5} />
                   </div>
                   <h3
                     className="text-lg font-semibold text-[#f5f0eb] mb-3 leading-snug"
                     style={{ fontFamily: "var(--font-playfair)" }}
-                  >
+                    data-atomic-id="am5w4ju"
+                    data-atomic-instance={i}>
                     {val.title}
                   </h3>
-                  <p className="text-sm text-[#f5f0eb]/50 leading-relaxed">
+                  <p
+                    className="text-sm text-[#f5f0eb]/50 leading-relaxed"
+                    data-atomic-id="a74n7gh"
+                    data-atomic-instance={i}>
                     {val.description}
                   </p>
                 </motion.div>
@@ -639,11 +712,12 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
-
       {/* ── PROCESS ──────────────────────────────────────────────────────── */}
-      <section className="py-28 md:py-36 bg-[#0a0a0a]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="py-28 md:py-36 bg-[#0a0a0a]" data-atomic-id="a1xc5c37">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8" data-atomic-id="a1pjnimc">
+          <div
+            className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+            data-atomic-id="a1m7xsqv">
             {/* Copy */}
             <motion.div
               variants={staggerContainer}
@@ -660,7 +734,7 @@ export default function HomePage() {
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
                 From Concept to
-                <br />
+                <br data-atomic-id="apnxpk5" />
                 Cherished Heirloom
               </motion.h2>
               <motion.p
@@ -673,28 +747,33 @@ export default function HomePage() {
               </motion.p>
 
               <motion.div variants={staggerContainer} className="space-y-8">
-                {processSteps.map((step) => (
-                  <motion.div
-                    key={step.number}
-                    variants={fadeInUp}
-                    className="flex items-start gap-5"
-                  >
-                    <span
-                      className="text-3xl font-bold text-[#c9a96e]/25 leading-none flex-shrink-0 w-10"
-                      style={{ fontFamily: "var(--font-playfair)" }}
-                    >
-                      {step.number}
-                    </span>
-                    <div>
-                      <h4 className="text-base font-semibold text-[#f5f0eb] mb-1">
-                        {step.title}
-                      </h4>
-                      <p className="text-sm text-[#f5f0eb]/50 leading-relaxed">
-                        {step.description}
-                      </p>
-                    </div>
-                  </motion.div>
-                ))}
+                {processSteps.map((step, __atomicIdx) => (<motion.div
+                  key={step.number}
+                  variants={fadeInUp}
+                  className="flex items-start gap-5"
+                >
+                  <span
+                    className="text-3xl font-bold text-[#c9a96e]/25 leading-none flex-shrink-0 w-10"
+                    style={{ fontFamily: "var(--font-playfair)" }}
+                    data-atomic-id="aoyssr9"
+                    data-atomic-instance={__atomicIdx}>
+                    {step.number}
+                  </span>
+                  <div data-atomic-id="a1xo9gvc" data-atomic-instance={__atomicIdx}>
+                    <h4
+                      className="text-base font-semibold text-[#f5f0eb] mb-1"
+                      data-atomic-id="a19k989w"
+                      data-atomic-instance={__atomicIdx}>
+                      {step.title}
+                    </h4>
+                    <p
+                      className="text-sm text-[#f5f0eb]/50 leading-relaxed"
+                      data-atomic-id="a1evxp4q"
+                      data-atomic-instance={__atomicIdx}>
+                      {step.description}
+                    </p>
+                  </div>
+                </motion.div>))}
               </motion.div>
             </motion.div>
 
@@ -706,24 +785,32 @@ export default function HomePage() {
               viewport={{ once: true, margin: "-80px" }}
               className="relative"
             >
-              <div className="rounded-2xl overflow-hidden aspect-[3/4] shadow-[0_24px_80px_rgba(0,0,0,0.5)]">
+              <div
+                className="rounded-2xl overflow-hidden aspect-[3/4] shadow-[0_24px_80px_rgba(0,0,0,0.5)]"
+                data-atomic-id="a1yv9w4z">
                 <img
                   src="https://i.ytimg.com/vi/RqUtKd21D1o/hqdefault.jpg"
                   alt="Jewelry crafting process in the Aurum atelier"
                   className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/50 to-transparent" />
+                  data-atomic-id="a9epvkg" />
+                <div
+                  className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/50 to-transparent"
+                  data-atomic-id="a9g4leg" />
               </div>
               {/* Decorative border */}
-              <div className="absolute -inset-3 rounded-2xl border border-[#c9a96e]/10 pointer-events-none" />
+              <div
+                className="absolute -inset-3 rounded-2xl border border-[#c9a96e]/10 pointer-events-none"
+                data-atomic-id="a1yy3kdz" />
             </motion.div>
           </div>
         </div>
       </section>
-
       {/* ── TESTIMONIALS ─────────────────────────────────────────────────── */}
-      <section id="testimonials" className="py-28 md:py-36 bg-[#0f0f0f]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section
+        id="testimonials"
+        className="py-28 md:py-36 bg-[#0f0f0f]"
+        data-atomic-id="ailgh3i">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8" data-atomic-id="aaxrjcv">
           <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -740,7 +827,7 @@ export default function HomePage() {
               style={{ fontFamily: "var(--font-playfair)", color: "#f97316", backgroundColor: "#d946ef", padding: "16px", margin: "8px", borderRadius: "24px", fontSize: "32px" }}
             >
               Worn with Love,
-              <br />
+              <br data-atomic-id="awkpba3" />
               Remembered Forever
             </motion.h2>
           </motion.div>
@@ -764,22 +851,45 @@ export default function HomePage() {
                     : "bg-[#161616] border-white/5 hover:border-[#c9a96e]/20"
                 }`}
               >
-                <div className="mb-5" style={{ color: "#f59e0b", backgroundColor: "#84cc16" }}>
+                <div
+                  className="mb-5"
+                  style={{ color: "#f59e0b", backgroundColor: "#84cc16" }}
+                  data-atomic-id="aadk979"
+                  data-atomic-instance={i}>
                   <StarRating rating={t.rating} />“The Soleil ring arrived in the most exquisite packaging. Every detail, from the setting to the engraving, was flawless</div>
-                <p className="text-[#f5f0eb]/70 text-sm leading-relaxed mb-6 italic">
+                <p
+                  className="text-[#f5f0eb]/70 text-sm leading-relaxed mb-6 italic"
+                  data-atomic-id="a1vz3ezo"
+                  data-atomic-instance={i}
+                  style={i === 0 ? {
+                    color: "#f59e0b"
+                  } : undefined}>
                   &ldquo;{t.text}&rdquo;
                 </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full overflow-hidden border border-[#c9a96e]/30 flex-shrink-0">
+                <div
+                  className="flex items-center gap-3"
+                  data-atomic-id="aagdxg9"
+                  data-atomic-instance={i}>
+                  <div
+                    className="w-10 h-10 rounded-full overflow-hidden border border-[#c9a96e]/30 flex-shrink-0"
+                    data-atomic-id="a5elpa4"
+                    data-atomic-instance={i}>
                     <img
                       src={t.avatar}
                       alt={t.name}
                       className="w-full h-full object-cover"
-                    />
+                      data-atomic-id="a1u83ird"
+                      data-atomic-instance={i} />
                   </div>
-                  <div>
-                    <p className="text-sm font-medium text-[#f5f0eb]">{t.name}</p>
-                    <p className="text-xs text-[#f5f0eb]/40">{t.location}</p>
+                  <div data-atomic-id="a5g0jem" data-atomic-instance={i}>
+                    <p
+                      className="text-sm font-medium text-[#f5f0eb]"
+                      data-atomic-id="a1qom7v2"
+                      data-atomic-instance={i}>{t.name}</p>
+                    <p
+                      className="text-xs text-[#f5f0eb]/40"
+                      data-atomic-id="a1qom9jk"
+                      data-atomic-instance={i}>{t.location}</p>
                   </div>
                 </div>
               </motion.div>
@@ -787,17 +897,20 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
-
       {/* ── CTA BANNER ───────────────────────────────────────────────────── */}
-      <section className="py-24 md:py-32 relative overflow-hidden bg-[#0a0a0a]">
+      <section
+        className="py-24 md:py-32 relative overflow-hidden bg-[#0a0a0a]"
+        data-atomic-id="a5tf5oy">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
               "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(201,169,110,0.07) 0%, transparent 70%)",
           }}
-        />
-        <div className="absolute inset-0 border-y border-[#c9a96e]/10 pointer-events-none" />
+          data-atomic-id="aohio1v" />
+        <div
+          className="absolute inset-0 border-y border-[#c9a96e]/10 pointer-events-none"
+          data-atomic-id="aoixi6d" />
 
         <motion.div
           variants={staggerContainer}
@@ -815,7 +928,7 @@ export default function HomePage() {
             style={{ fontFamily: "var(--font-playfair)" }}
           >
             Create Something
-            <br />
+            <br data-atomic-id="a18v20bk" />
             Entirely Your Own
           </motion.h2>
           <motion.p
@@ -833,7 +946,7 @@ export default function HomePage() {
             <a
               href="#contact"
               className="group inline-flex items-center gap-2 px-8 py-3.5 bg-[#c9a96e] text-[#0f0f0f] text-sm tracking-widest uppercase font-medium rounded-sm hover:bg-[#e0c08a] transition-all duration-300 shadow-[0_0_30px_rgba(201,169,110,0.2)]"
-            >
+              data-atomic-id="a1x9sho1">
               Begin a Commission
               <ArrowRight
                 size={15}
@@ -843,17 +956,21 @@ export default function HomePage() {
             <a
               href="#collections"
               className="inline-flex items-center gap-2 px-8 py-3.5 border border-[#c9a96e]/40 text-[#f5f0eb]/80 text-sm tracking-widest uppercase font-medium rounded-sm hover:border-[#c9a96e] hover:text-[#c9a96e] transition-all duration-300"
-            >
+              data-atomic-id="a1x9sjcj">
               Browse Ready-to-Wear
             </a>
           </motion.div>
         </motion.div>
       </section>
-
       {/* ── CONTACT ──────────────────────────────────────────────────────── */}
-      <section id="contact" className="py-28 md:py-36 bg-[#0f0f0f]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <section
+        id="contact"
+        className="py-28 md:py-36 bg-[#0f0f0f]"
+        data-atomic-id="aq3ucod">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8" data-atomic-id="a18wqqri">
+          <div
+            className="grid grid-cols-1 lg:grid-cols-2 gap-16"
+            data-atomic-id="agfzekh">
             {/* Info */}
             <motion.div
               variants={staggerContainer}
@@ -870,7 +987,7 @@ export default function HomePage() {
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
                 We Would Love
-                <br />
+                <br data-atomic-id="a5ow3tr" />
                 to Hear from You
               </motion.h2>
               <motion.p
@@ -899,7 +1016,7 @@ export default function HomePage() {
                     label: "Email",
                     value: "hello@aurum-jewelry.com",
                   },
-                ].map((item) => {
+                ].map((item, __atomicIdx) => {
                   const Icon = item.icon;
                   return (
                     <motion.div
@@ -907,14 +1024,23 @@ export default function HomePage() {
                       variants={fadeInUp}
                       className="flex items-start gap-4"
                     >
-                      <div className="w-10 h-10 rounded-xl bg-[#c9a96e]/10 border border-[#c9a96e]/25 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <div
+                        className="w-10 h-10 rounded-xl bg-[#c9a96e]/10 border border-[#c9a96e]/25 flex items-center justify-center flex-shrink-0 mt-0.5"
+                        data-atomic-id="asrrnru"
+                        data-atomic-instance={__atomicIdx}>
                         <Icon size={16} className="text-[#c9a96e]" strokeWidth={1.5} />
                       </div>
-                      <div>
-                        <p className="text-xs tracking-widest uppercase text-[#f5f0eb]/40 mb-0.5">
+                      <div data-atomic-id="ast6hwc" data-atomic-instance={__atomicIdx}>
+                        <p
+                          className="text-xs tracking-widest uppercase text-[#f5f0eb]/40 mb-0.5"
+                          data-atomic-id="as6otm4"
+                          data-atomic-instance={__atomicIdx}>
                           {item.label}
                         </p>
-                        <p className="text-sm text-[#f5f0eb]/75">{item.value}</p>
+                        <p
+                          className="text-sm text-[#f5f0eb]/75"
+                          data-atomic-id="as6ovam"
+                          data-atomic-instance={__atomicIdx}>{item.value}</p>
                       </div>
                     </motion.div>
                   );
@@ -936,16 +1062,20 @@ export default function HomePage() {
                   transition={{ duration: 0.5 }}
                   className="h-full flex flex-col items-center justify-center text-center p-12 bg-[#161616] border border-[#c9a96e]/20 rounded-2xl"
                 >
-                  <div className="w-14 h-14 rounded-full bg-[#c9a96e]/15 border border-[#c9a96e]/40 flex items-center justify-center mb-5">
+                  <div
+                    className="w-14 h-14 rounded-full bg-[#c9a96e]/15 border border-[#c9a96e]/40 flex items-center justify-center mb-5"
+                    data-atomic-id="a1hg45gj">
                     <Check size={24} className="text-[#c9a96e]" />
                   </div>
                   <h3
                     className="text-2xl font-semibold text-[#f5f0eb] mb-3"
                     style={{ fontFamily: "var(--font-playfair)" }}
-                  >
+                    data-atomic-id="a82tb4t">
                     Message Received
                   </h3>
-                  <p className="text-[#f5f0eb]/55 text-sm leading-relaxed max-w-xs">
+                  <p
+                    className="text-[#f5f0eb]/55 text-sm leading-relaxed max-w-xs"
+                    data-atomic-id="a1uyy75g">
                     Thank you for reaching out. A member of our team will be in
                     touch within 24 hours.
                   </p>
@@ -954,12 +1084,12 @@ export default function HomePage() {
                 <form
                   onSubmit={handleContactSubmit}
                   className="bg-[#161616] border border-white/5 rounded-2xl p-8 space-y-5 shadow-[0_8px_40px_rgba(0,0,0,0.3)]"
-                >
-                  <div>
+                  data-atomic-id="a1b82fm4">
+                  <div data-atomic-id="a5w6dsu">
                     <label
                       htmlFor="name"
                       className="block text-xs tracking-widest uppercase text-[#f5f0eb]/50 mb-2"
-                    >
+                      data-atomic-id="a5tq9a6">
                       Full Name
                     </label>
                     <input
@@ -971,13 +1101,13 @@ export default function HomePage() {
                       onChange={handleContactChange}
                       placeholder="Your name"
                       className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-[#f5f0eb] placeholder-[#f5f0eb]/25 focus:outline-none focus:border-[#c9a96e]/50 focus:ring-1 focus:ring-[#c9a96e]/30 transition-all duration-300"
-                    />
+                      data-atomic-id="a1chpmvk" />
                   </div>
-                  <div>
+                  <div data-atomic-id="a5xl7xc">
                     <label
                       htmlFor="email"
                       className="block text-xs tracking-widest uppercase text-[#f5f0eb]/50 mb-2"
-                    >
+                      data-atomic-id="a1uwz3y8">
                       Email Address
                     </label>
                     <input
@@ -989,13 +1119,13 @@ export default function HomePage() {
                       onChange={handleContactChange}
                       placeholder="your@email.com"
                       className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-[#f5f0eb] placeholder-[#f5f0eb]/25 focus:outline-none focus:border-[#c9a96e]/50 focus:ring-1 focus:ring-[#c9a96e]/30 transition-all duration-300"
-                    />
+                      data-atomic-id="a12jufki" />
                   </div>
-                  <div>
+                  <div data-atomic-id="a5z021u">
                     <label
                       htmlFor="message"
                       className="block text-xs tracking-widest uppercase text-[#f5f0eb]/50 mb-2"
-                    >
+                      data-atomic-id="a1kz3wn6">
                       Message
                     </label>
                     <textarea
@@ -1007,7 +1137,7 @@ export default function HomePage() {
                       onChange={handleContactChange}
                       placeholder="Tell us about your inquiry or commission..."
                       className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-[#f5f0eb] placeholder-[#f5f0eb]/25 focus:outline-none focus:border-[#c9a96e]/50 focus:ring-1 focus:ring-[#c9a96e]/30 transition-all duration-300 resize-none"
-                    />
+                      data-atomic-id="a14jur36" />
                   </div>
                   <motion.button
                     type="submit"
